@@ -622,3 +622,44 @@ th {
     }
 }
 
+/* Animaciones */
+
+.fadeInLeft {
+    animation: fadeInLeft 1.5s;
+    -webkit-animation: fadeInLeft 1.5s;
+    -moz-animation: fadeInLeft 1.5s;
+    -o-animation: fadeInLeft 1.5s;
+    -ms-animation: fadeInLeft 1.5s;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1.5s;
+    -webkit-animation: fadeInRight 1.5s;
+    -moz-animation: fadeInRight 1.5s;
+    -o-animation: fadeInRight 1.5s;
+    -ms-animation: fadeInRight 1.5s;
+}
+
+@keyframes  fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes  fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
