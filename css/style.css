@@ -42,7 +42,7 @@ br {
   width: 70%;
   align-self: center;
   text-align: center;
-  color: var(--eerieBlack);
+  color: #242423;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -64,7 +64,7 @@ br {
     width: 75%;
     align-self: center;
     text-align: center;
-    color: var(--eerieBlack);
+    color: #242423;
     font-size: 1rem;
     line-height: 1.2;
   }
@@ -80,7 +80,7 @@ br {
     width: 80%;
     align-self: center;
     text-align: center;
-    color: var(--eerieBlack);
+    color: #242423;
     font-size: 1rem;
     line-height: 1.2;
   }

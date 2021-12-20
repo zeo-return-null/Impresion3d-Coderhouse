@@ -2,7 +2,7 @@
 .header {
 
     .bg-dark {
-        background-color: $warmGrey !important;
+        background-color: $bg-dark-color !important;
     }
 
     .logo {
@@ -19,8 +19,8 @@
     }
 
     .btn-primary {
-        background-color: $yellowOchre !important;
-        color:$eerieBlack !important;
+        background-color: $accent-color !important;
+        color:$text-color!important;
         border-radius: 1rem;
         text-align: center;
         opacity: 1;
@@ -33,7 +33,7 @@
     }
 
     .active {
-        background-color: $eerieBlack !important;
-        color: $yellowOchre !important;
+        background-color: $bg-dark-alternative-color !important;
+        color: $accent-color !important;
     }
 }

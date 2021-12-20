@@ -5,6 +5,24 @@ $yellowOchre: #f5cb5c;
 $eerieBlack: #242423;
 $warmGrey: #333533;
 
+
+// Color variables
+
+// Background colors
+$bg-color-primary: $greyGreen;
+$bg-color-secondary: $coolGrey;
+$bg-dark-color: $warmGrey;
+$bg-dark-alternative-color: $eerieBlack;
+$accent-color: $yellowOchre;
+
+// Utilities colors
+$title-color: $yellowOchre;
+$title-alternative-color: $warmGrey;
+$title-shadow-color: $warmGrey;
+$text-color: $eerieBlack;
+$shadow-color: $coolGrey;
+$border-color: $warmGrey;
+
 // Font style
 
 $font-style: "Roboto", sans-serif;
