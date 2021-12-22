@@ -23,10 +23,7 @@ br {
 
 
 // Main section
-
-
-.main,
-.section {
+.main, .section {
     background-color: map-get($colors, bg-color-primary);
 
     .title {
@@ -35,6 +32,11 @@ br {
         text-align: center;
         color: map-get($colors, title-color);
         text-shadow: 2px 2px map-get($colors, title-shadow-color);
+    }
+
+    .subtitle {
+        @extend .title;
+        font-size: 2.5rem;
     }
 
     .article {
