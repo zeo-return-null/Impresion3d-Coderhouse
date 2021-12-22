@@ -1,0 +1,25 @@
+{
+  "name": "impresion3d",
+  "version": "1.0.0",
+  "description": "Trabajo realizado en el curso de Desarrollo Web en Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeo-return-null/Impresion3d-Coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeo-return-null/Impresion3d-Coderhouse/issues"
+  },
+  "homepage": "https://github.com/zeo-return-null/Impresion3d-Coderhouse#readme",
+  "dependencies": {
+    "sass": "^1.45.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
