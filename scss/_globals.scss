@@ -27,14 +27,14 @@ br {
 
 .main,
 .section {
-    background-color: $bg-color-primary;
+    background-color: map-get($colors, bg-color-primary);
 
     .title {
         position: top;
         font-size: 3rem;
         text-align: center;
-        color: $title-color;
-        text-shadow: 2px 2px $title-shadow-color;
+        color: map-get($colors, title-color);
+        text-shadow: 2px 2px map-get($colors, title-shadow-color);
     }
 
     .article {
@@ -49,7 +49,7 @@ br {
             width: 70%;
             align-self: center;
             text-align: center;
-            color: $text-color;
+            color: map-get($colors, text-color);
             font-size: 1.2rem;
             line-height: 1.5;
         }
@@ -58,7 +58,7 @@ br {
             height: 450px;
             width: 450px;
             border-radius: 1rem;
-            filter: drop-shadow(10px 10px 3px $shadow-color);
+            filter: drop-shadow(10px 10px 3px map-get($colors, shadow-color));
         }
 
         @include breakpoint-down(medium) {
@@ -72,7 +72,7 @@ br {
                 width: 75%;
                 align-self: center;
                 text-align: center;
-                color: $text-color;
+                color: map-get($colors, text-color);
                 font-size: 1rem;
                 line-height: 1.2;
             }
@@ -88,7 +88,7 @@ br {
                 width: 80%;
                 align-self: center;
                 text-align: center;
-                color: $text-color;
+                color: map-get($colors, text-color);
                 font-size: 1rem;
                 line-height: 1.2;
             }
@@ -103,7 +103,7 @@ br {
     // Integrants section styles
 
     .bg-container {
-        background-color: $bg-color-secondary;
+        background-color: map-get($colors, bg-color-secondary);
         border-radius: 1rem;
     }
 
@@ -111,8 +111,8 @@ br {
         text-align: center;
         font-size: 2rem;
         font-weight: 700;
-        color: $title-color;
-        text-shadow: 2px 2px $title-shadow-color;
+        color: map-get($colors, title-color);
+        text-shadow: 2px 2px map-get($colors, title-shadow-color);
     }
 
     .integrants__img {
@@ -136,14 +136,14 @@ br {
     // Product section styles
 
     .product {
-        background-color: $bg-color-secondary;
+        background-color: map-get($colors, bg-color-secondary);
         
         &__title {
             text-align: center;
             margin-top: 1rem;
             font-size: 1.3rem;
             font-weight: 700;
-            color: $title-alternative-color;
+            color: map-get($colors, title-alternative-color);
         }
 
         &__section {
@@ -229,9 +229,9 @@ br {
             padding: 0.5rem 1rem 0.5rem 1rem;
             text-align: center;
             border-radius: 1rem;
-            color: $text-color;
-            background-color: $accent-color;
-            border: 1px solid $border-color;
+            color: map-get($colors, text-color);
+            background-color: map-get($colors, accent-color);
+            border: 1px solid map-get($colors, border-color);
             transition: ease-in-out 200ms;
             opacity: 1;
         }

@@ -2,7 +2,7 @@
 .header {
 
     .bg-dark {
-        background-color: $bg-dark-color !important;
+        background-color: map-get($colors, bg-dark-color) !important;
     }
 
     .logo {
@@ -19,8 +19,8 @@
     }
 
     .btn-primary {
-        background-color: $accent-color !important;
-        color:$text-color!important;
+        background-color: map-get($colors, accent-color) !important;
+        color:map-get($colors, text-color) !important;
         border-radius: 1rem;
         text-align: center;
         opacity: 1;
@@ -33,7 +33,7 @@
     }
 
     .active {
-        background-color: $bg-dark-alternative-color !important;
-        color: $accent-color !important;
+        background-color: map-get($colors, bg-dark-alternative-color) !important;
+        color: map-get($colors, accent-color) !important;
     }
 }

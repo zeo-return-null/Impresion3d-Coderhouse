@@ -1,15 +1,4 @@
-// Breakpoints
-
-$breakpoints-up: (
-    "large" : "1024px",
-    "medium": "480px"
-);
-
-$breakpoints-down: (
-    "small": "479px",
-    "medium": "1023px"
-);
-
+// Scaling screens
 @mixin breakpoint-up($size) {
     @media only screen and (min-device-width: map-get($breakpoints-up, $size)) {
         @content;
