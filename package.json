@@ -4,8 +4,7 @@
   "description": "Trabajo realizado en el curso de Desarrollo Web en Coderhouse.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/style.scss css/style.css",
-    "nodemon": "nodemon -e scss -x \"npm run sass\""
+    "sass": "node-sass --w scss/ -o css/ --recursive"
   },
   "repository": {
     "type": "git",
@@ -21,8 +20,7 @@
     "sass": "^1.45.1"
   },
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "node-sass": "^7.0.1"
   },
   "keywords": [
     "impresion",
