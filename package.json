@@ -4,13 +4,14 @@
   "description": "Trabajo realizado en el curso de Desarrollo Web en Coderhouse.",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "nodemon": "nodemon -e scss -x \"npm run sass\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zeo-return-null/Impresion3d-Coderhouse.git"
   },
-  "author": "",
+  "author": "Juan Sepulveda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zeo-return-null/Impresion3d-Coderhouse/issues"
@@ -20,6 +21,12 @@
     "sass": "^1.45.1"
   },
   "devDependencies": {
-    "node-sass": "^7.0.0"
-  }
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [
+    "impresion",
+    "3d",
+    "robotica"
+  ]
 }
