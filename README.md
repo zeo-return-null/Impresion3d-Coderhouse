@@ -4,7 +4,7 @@ Trabajo realizado en el curso de Desarrollo Web en Coderhouse.
 
 Versión Live: [Impresión 3D](https://zeo-return-null.github.io/Impresion3d-Coderhouse/)
 
-## Tecnologias vistas hasta el momento.
+## Tecnologías utilizadas.
 
 - HTML5
 - CSS3
