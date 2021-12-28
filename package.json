@@ -4,7 +4,7 @@
   "description": "Trabajo realizado en el curso de Desarrollo Web en Coderhouse.",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "sass": "sass --watch scss/style.scss css/style.css",
     "nodemon": "nodemon -e scss -x \"npm run sass\""
   },
   "repository": {
