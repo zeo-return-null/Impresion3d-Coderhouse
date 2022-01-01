@@ -113,11 +113,10 @@ br {
           flex-direction: column;
           align-content: center;
           gap: 1.5rem; } }
-    @media only screen and (max-device-width: 479px) {
+    @media only screen and (max-device-width: 770px) {
       .main .product, .section .product {
         flex-direction: column;
-        align-content: center;
-        justify-content: center; } }
+        gap: 1.5rem; } }
   .main .text-color, .section .text-color {
     color: #242423; }
   .main .card, .section .card {

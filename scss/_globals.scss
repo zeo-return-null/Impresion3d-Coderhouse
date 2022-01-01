@@ -171,11 +171,11 @@ br {
             }
         }
 
-        @include breakpoint-down(small) {
+        @include breakpoint-down(small-medium) {
             flex-direction: column;
-            align-content: center;
-            justify-content: center;
+            gap: 1.5rem;
         }
+
     }
 
     .text-color {
