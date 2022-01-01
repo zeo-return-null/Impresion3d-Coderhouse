@@ -12,16 +12,18 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Genos&family=Roboto:wght@300;500;700&display=swap');
   </style>
-  <title>Productos - Impresiones del Bajo Negro</title>  
-  <meta name="description" content= "Productos para el uso cotidiano y decoración realizados por Impresiones del Bajo Negro." />
-  <meta name="robots" content= "index, follow, imageindex">
-  <meta name="keywords" content="impresión 3D FDM plásticos PLA ABS PETG robótica diseño modelos reciclado adornos decoración gadgets">
+  <title>Productos - Impresiones del Bajo Negro</title>
+  <meta name="description"
+    content="Productos para el uso cotidiano y decoración realizados por Impresiones del Bajo Negro." />
+  <meta name="robots" content="index, follow, imageindex">
+  <meta name="keywords"
+    content="impresión 3D FDM plásticos PLA ABS PETG robótica diseño modelos reciclado adornos decoración gadgets">
 </head>
 
 <body>
   <!-- Header -->
   <header class="header">
-    <!-- Navbar de Bootstrap -->
+    <!-- Navbar  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -53,46 +55,91 @@
       </div>
     </nav>
   </header>
+
   <!-- Main Section -->
   <main class="main container-fluid">
     <h3 class="title my-3">Productos</h3>
-    <!-- Products display se utilizaron clases de Boostrap -->
-    <section class="product__section container-fluid">
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/3d-octocat.png" alt="impresion de octocat, mascota de github">
-        <p class="product__title">Octocat</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/3d-skull.png" alt="craneo humano impreso en 3d">
-        <p class="product__title">Craneo Humano</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/3d-thinker.png" alt="escultura el pensador impreso en 3d">
-        <p class="product__title">El pensador</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/3d-baby-yoda.png" alt="impresion de baby yoda">
-        <p class="product__title">Baby Yoda</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/animals-keyrings.png" alt="llaveros de animales">
-        <p class="product__title">Llaveros de animales</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/groot.png" alt="impresion de groot de guardianes de la galaxia">
-        <p class="product__title">Groot</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/phone-stand.png" alt="soporte para celular">
-        <p class="product__title">Soporte para celular Modelo 1</p>
-      </a>
-      <a href="#" class="product__display text-decoration-none">
-        <img class="product__img" src="../assets/images/phone-stand-2.png" alt="soporte para celular">
-        <p class="product__title">Soporte para celular Modelo 2</p>
-      </a>
+
+    <!-- Products display -->
+    <section class="product__section container-fluid py-3 px-3 justify-content-center align-content-center">
+
+      <!-- Card components -->
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <a href="#" class="text-decoration-none text-color">
+          <img src="../assets/images/3d-octocat.png" class="card-img-top" alt="impresion de octocat, mascota de github">
+          <div class="card-body bg-container">
+            <h4 class="card-text text-center border-bottom border-1 border-secondary">Octocat</h4>
+            <p class="card-text text-center">Impresion de la mascota de github. <br></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <a href="#" class="text-decoration-none text-color">
+          <img src="../assets/images/3d-skull.png" class="card-img-top" alt="craneo humano impreso en 3d">
+          <div class="card-body bg-container ">
+            <h4 class="card-text text-center border-bottom border-1 border-secondary">Craneo Humano</h4>
+            <p class="card-text text-center">Impresion decorativa de un craneo humano. <br></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <a href="#" class="text-decoration-none text-color">
+          <img src="../assets/images/3d-thinker.png" class="card-img-top"
+            alt="escultura el pensador con baja resolucion de poligonos impreso en 3d">
+          <div class="card-body bg-container ">
+            <h4 class="card-text text-center border-bottom border-1 border-secondary">El pensador </h4>
+            <p class="card-text text-center">Impresion de la famosa escultura en baja resolución.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <a href="#" class="text-decoration-none text-color">
+          <img src="../assets/images/3d-baby-yoda.png" class="card-img-top" alt="impresion de baby yoda">
+          <div class="card-body bg-container ">
+            <h4 class="card-text text-center border-bottom border-1 border-secondary">Baby Yoda</h4>
+            <p class="card-text text-center">Impresion de la famosa escultura en baja resolución.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <img src="../assets/images/groot.png" class="card-img-top" alt="impresion de groot de guardianes de la galaxia">
+        <div class="card-body bg-container ">
+          <h4 class="card-text text-center border-bottom border-1 border-secondary">Groot</h4>
+          <p class="card-text text-center">Groot de los guardianes de la galaxia. <br></p>
+        </div>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <img src="../assets/images/animals-keyrings.png" class="card-img-top" alt="llaveros de animales">
+        <div class="card-body bg-container ">
+          <h4 class="card-text text-center border-bottom border-1 border-secondary">LLaveros</h4>
+          <p class="card-text text-center">Llaveros de animales que tambien funcionan como apoya celular.</p>
+        </div>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <img src="../assets/images/phone-stand.png" class="card-img-top" alt="Soporte para el celular">
+        <div class="card-body bg-container ">
+          <h4 class="card-text text-center border-bottom border-1 border-secondary">Soporte celular</h4>
+          <p class="card-text text-center">Modelo 1 de soporte para el celular.</p><br>
+        </div>
+      </div>
+
+      <div class="card rounded-3 align-self-center" style="width: 14rem;">
+        <img src="../assets/images/phone-stand-2.png" class="card-img-top" alt="otro soporte para celular">
+        <div class="card-body bg-container ">
+          <h4 class="card-text text-center border-bottom border-1 border-secondary">Soporte celular</h4>
+          <p class="card-text text-center">Modelo 2 de soporte para el celular.</p><br>
+        </div>
+      </div>
     </section>
   </main>
-  <!-- Footer modificado con clases de Bootstrap -->
+
+  <!-- Footer -->
   <footer class="footer container-fluid bg-dark d-flex justify-content-between py-3">
     <a class="navbar-brand" href="../index.html">
       <img class=" logo svg " src="../assets/images/logo.svg" alt="logo">

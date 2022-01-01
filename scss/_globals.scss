@@ -60,7 +60,7 @@ br {
             height: 450px;
             width: 450px;
             border-radius: 1rem;
-            filter: drop-shadow(10px 10px 3px map-get($colors, shadow-color));
+            filter: drop-shadow(1px 1px 2px map-get($colors, shadow-color));
         }
 
         @include breakpoint-down(medium) {
@@ -106,7 +106,10 @@ br {
 
     .bg-container {
         background-color: map-get($colors, bg-color-secondary);
-        border-radius: 1rem;
+
+        &__alternative {
+            background-color: map-get($colors, bg-color-primary);
+        }
     }
 
     .integrants__name {
@@ -140,78 +143,31 @@ br {
     .product {
         background-color: map-get($colors, bg-color-secondary);
         
-        &__title {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: map-get($colors, title-alternative-color);
-        }
-
         &__section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            gap: 2.5rem;
+            gap: 1.5rem;
 
             @include breakpoint-down(medium) {
                 display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+            }
+
+            @include breakpoint-down(small-medium) {
+                display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto;
+                gap: 1rem;
             }
 
             @include breakpoint-down(small) {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
                 gap: 1.5rem;
-            }
-        }
-
-
-        &__display {
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            align-items: center;
-
-
-            &--destacados {
-                transition: transform .2s;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-
-                @include breakpoint-down(small) {
-                    justify-self: center;
-                    align-self: center;
-                }
-            }
-
-        }
-
-        &__img {
-            width: 12rem;
-            height: 12rem;
-            border-radius: 1rem;
-
-            &--destacados {
-                width: 200px;
-                height: 200px;
-                border-radius: 25%;
-
-                @include breakpoint-down(medium) {
-                    width: 135px;
-                    height: 135px;
-                    border-radius: 25%;
-                }
-
-                @include breakpoint-down(small) {
-                    width: 220px;
-                    height: 220px;
-                    border-radius: 25%;
-                }
+                
             }
         }
 
@@ -219,6 +175,20 @@ br {
             flex-direction: column;
             align-content: center;
             justify-content: center;
+        }
+    }
+
+    .text-color {
+        color: map-get($colors, text-color);
+    }
+
+    .card {
+        border: 0px;
+        transition: ease-in-out 100ms;
+        &:hover {
+            transition: ease-in-out 100ms;
+            transform: scale(1.05);
+            filter: drop-shadow(1px 1px 3px map-get($colors, shadow-color));
         }
     }
 

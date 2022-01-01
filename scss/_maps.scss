@@ -13,7 +13,7 @@ $colors: (
     title-alternative-color: $warmGrey,
     title-shadow-color: $warmGrey,
     text-color: $eerieBlack,
-    shadow-color: $coolGrey,
+    shadow-color: $warmGrey,
     border-color: $warmGrey
 );
 
@@ -25,6 +25,7 @@ $breakpoints-up: (
 
 $breakpoints-down: (
     "small": "479px",
+    "small-medium": "770px",
     "medium": "1023px"
 );
 
