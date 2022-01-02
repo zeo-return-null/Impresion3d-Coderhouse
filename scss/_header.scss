@@ -8,6 +8,11 @@
     .logo {
         width: 5rem;
         height: 5rem;
+
+        @include breakpoint-down(small) {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
     }
     
     .svg {
