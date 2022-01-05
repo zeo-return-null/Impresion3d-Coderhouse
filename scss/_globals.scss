@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: $font-style;
+    font-family: $font-p;
     text-decoration: none;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -29,9 +29,10 @@ br {
     .title {
         position: top;
         font-size: 3rem;
+        font-family: $font-title;
+        font-weight: 400;
         text-align: center;
         color: map-get($colors, title-color);
-        text-shadow: 2px 2px map-get($colors, title-shadow-color);
 
         @include breakpoint-down(small) {
             font-size: 2rem;
@@ -123,9 +124,9 @@ br {
     .integrants__name {
         text-align: center;
         font-size: 2rem;
-        font-weight: 700;
+        font-family: $font-title;
+        font-weight: 400;
         color: map-get($colors, title-color);
-        text-shadow: 2px 2px map-get($colors, title-shadow-color);
     }
 
     .integrants__img {
@@ -167,7 +168,7 @@ br {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto;
-                gap: 1rem;
+                gap: 1rem;             
             }
 
             @include breakpoint-down(small) {

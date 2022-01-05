@@ -21,9 +21,10 @@ br {
   .main .title, .main .subtitle, .section .title, .section .subtitle {
     position: top;
     font-size: 3rem;
+    font-family: "Bungee", cursive;
+    font-weight: 400;
     text-align: center;
-    color: #f5cb5c;
-    text-shadow: 2px 2px #333533; }
+    color: #333533; }
     @media only screen and (max-device-width: 479px) {
       .main .title, .main .subtitle, .section .title, .section .subtitle {
         font-size: 2rem; } }
@@ -47,7 +48,7 @@ br {
     height: 450px;
     width: 450px;
     border-radius: 1rem;
-    filter: drop-shadow(1px 1px 2px #333533); }
+    filter: drop-shadow(1px 1px 2px #242423); }
   @media only screen and (max-device-width: 1023px) {
     .main .article--side, .section .article--side {
       flex-direction: column;
@@ -80,9 +81,9 @@ br {
   .main .integrants__name, .section .integrants__name {
     text-align: center;
     font-size: 2rem;
-    font-weight: 700;
-    color: #f5cb5c;
-    text-shadow: 2px 2px #333533; }
+    font-family: "Bungee", cursive;
+    font-weight: 400;
+    color: #333533; }
   .main .integrants__img, .section .integrants__img {
     height: 250px;
     width: 250px; }
@@ -131,7 +132,7 @@ br {
     .main .card:hover, .section .card:hover {
       transition: ease-in-out 100ms;
       transform: scale(1.05);
-      filter: drop-shadow(1px 1px 3px #333533); }
+      filter: drop-shadow(1px 1px 3px #242423); }
   .main .container__btn .btn, .section .container__btn .btn {
     margin: 0 0.5rem 1rem 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
