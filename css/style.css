@@ -18,11 +18,21 @@ br {
 
 .main, .section {
   background-color: #e8eddf; }
-  .main .title, .section .title {
+  .main .title, .main .subtitle, .section .title, .section .subtitle {
+    padding: 0.25rem;
+    font-size: 3rem;
     font-family: "Bungee", cursive;
     font-weight: 400;
     text-align: center;
     color: #333533; }
+    @media only screen and (max-device-width: 479px) {
+      .main .title, .main .subtitle, .section .title, .section .subtitle {
+        font-size: 2rem; } }
+  .main .subtitle, .section .subtitle {
+    font-size: 2.5rem; }
+    @media only screen and (max-device-width: 479px) {
+      .main .subtitle, .section .subtitle {
+        font-size: 1.75rem; } }
   .main .article--side, .section .article--side {
     display: flex;
     justify-content: space-evenly;
@@ -65,12 +75,12 @@ br {
       height: 250px;
       width: 220px; } }
   .main .bg-container, .section .bg-container {
-    background-color: #cfdbd5;
-    height: auto; }
+    background-color: #cfdbd5; }
     .main .bg-container__alternative, .section .bg-container__alternative {
       background-color: #e8eddf; }
   .main .integrants__name, .section .integrants__name {
     text-align: center;
+    font-size: 2rem;
     font-family: "Bungee", cursive;
     font-weight: 400;
     color: #333533; }
