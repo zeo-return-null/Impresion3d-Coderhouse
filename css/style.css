@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -18,6 +19,7 @@ br {
 .main, .section {
   background-color: #e8eddf; }
   .main .title, .main .subtitle, .section .title, .section .subtitle {
+    padding: 0.25rem;
     font-size: 3rem;
     font-family: "Bungee", cursive;
     font-weight: 400;
