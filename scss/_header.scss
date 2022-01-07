@@ -1,4 +1,3 @@
-
 .header {
 
     .bg-dark {
@@ -14,23 +13,23 @@
             height: 3.5rem;
         }
     }
-    
+
     .svg {
-    filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
+        filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
     }
-    
+
     .navbar-collapse {
         flex-grow: 0;
     }
 
     .btn-primary {
         background-color: map-get($colors, accent-color) !important;
-        color:map-get($colors, text-color) !important;
+        color: map-get($colors, text-color) !important;
         border-radius: 1rem;
         text-align: center;
         opacity: 1;
         transition: ease-in-out 200ms;
-    
+
         &:hover {
             opacity: 0.7;
             transition: ease-in-out 200ms;

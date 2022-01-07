@@ -1,7 +1,5 @@
 // Colors map
-$colors: (
-
-    // Background colors
+$colors: ( // Background colors
     bg-color-primary: $greyGreen,
     bg-color-secondary: $coolGrey,
     bg-dark-color: $warmGrey,
@@ -13,18 +11,14 @@ $colors: (
     title-alternative-color: $warmGrey,
     text-color: $eerieBlack,
     shadow-color: $eerieBlack,
-    border-color: $warmGrey
-);
+    border-color: $warmGrey);
 
 // Breakpoints
-$breakpoints-up: (
-    "large" : "1024px",
+$breakpoints-up: ("large" : "1024px",
     "medium": "480px"
 );
 
-$breakpoints-down: (
-    "small": "479px",
+$breakpoints-down: ("small": "479px",
     "small-medium": "770px",
     "medium": "1023px"
 );
-

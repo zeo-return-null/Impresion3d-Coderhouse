@@ -23,7 +23,8 @@ br {
 
 
 // Main section
-.main, .section {
+.main,
+.section {
     background-color: map-get($colors, bg-color-primary);
 
     .title {
@@ -151,7 +152,7 @@ br {
 
     .product {
         background-color: map-get($colors, bg-color-secondary);
-        
+
         &__section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -168,7 +169,7 @@ br {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto;
-                gap: 1rem;             
+                gap: 1rem;
             }
 
             @include breakpoint-down(small) {
@@ -176,7 +177,7 @@ br {
                 flex-direction: column;
                 align-content: center;
                 gap: 1.5rem;
-                
+
             }
         }
 
@@ -196,6 +197,7 @@ br {
         width: 14rem;
         border: 0px;
         transition: ease-in-out 100ms;
+
         &:hover {
             transition: ease-in-out 100ms;
             transform: scale(1.05);

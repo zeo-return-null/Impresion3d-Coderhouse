@@ -3,12 +3,13 @@
 
     .menu {
         justify-self: center;
+
         .links {
             display: flex;
             margin: 0.25rem;
             justify-content: center;
 
-            &__a{
+            &__a {
                 margin: 0.25rem;
                 padding: 0.5rem 1.25rem 0.5rem 1.25rem;
                 text-align: center;
@@ -25,7 +26,7 @@
                     color: map-get($colors, bg-dark-alternative-color);
                 }
             }
-            
+
         }
     }
 
@@ -44,9 +45,9 @@
         width: 5rem;
         height: 5rem;
     }
-    
+
     .svg {
-    filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
+        filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
     }
 
     @include breakpoint-down(small) {
@@ -58,12 +59,12 @@
         .logo {
             display: none
         }
-        
+
         .social {
             display: flex;
             flex-direction: row;
             align-self: center;
-            
+
             a {
                 margin: 1rem;
             }
