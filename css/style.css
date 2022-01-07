@@ -28,7 +28,7 @@ br {
     font-weight: 400;
     text-align: center;
     color: #333533; }
-    @media only screen and (max-device-width: 479px) {
+    @media (max-device-width: 479px) {
       .main .title, .main .subtitle,
       .section .title,
       .section .subtitle {
@@ -36,7 +36,7 @@ br {
   .main .subtitle,
   .section .subtitle {
     font-size: 2.5rem; }
-    @media only screen and (max-device-width: 479px) {
+    @media (max-device-width: 479px) {
       .main .subtitle,
       .section .subtitle {
         font-size: 1.75rem; } }
@@ -59,7 +59,7 @@ br {
     width: 450px;
     border-radius: 1rem;
     filter: drop-shadow(1px 1px 2px #242423); }
-  @media only screen and (max-device-width: 1023px) {
+  @media (max-device-width: 1023px) {
     .main .article--side,
     .section .article--side {
       flex-direction: column;
@@ -76,7 +76,7 @@ br {
     .section .article__img {
       height: 350px;
       width: 320px; } }
-  @media only screen and (max-device-width: 479px) {
+  @media (max-device-width: 479px) {
     .main .article__p,
     .section .article__p {
       width: 80%;
@@ -106,12 +106,12 @@ br {
   .section .integrants__img {
     height: 250px;
     width: 250px; }
-    @media only screen and (max-device-width: 479px) {
+    @media (max-device-width: 479px) {
       .main .integrants__img,
       .section .integrants__img {
         height: 180px;
         width: 180px; } }
-  @media only screen and (max-device-width: 1023px) {
+  @media (max-device-width: 1023px) {
     .main .integrants__mobile,
     .section .integrants__mobile {
       flex-direction: column;
@@ -126,27 +126,27 @@ br {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 1.5rem; }
-      @media only screen and (max-device-width: 1023px) {
+      @media (max-device-width: 1023px) {
         .main .product__section,
         .section .product__section {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: auto; } }
-      @media only screen and (max-device-width: 770px) {
+      @media (max-device-width: 770px) {
         .main .product__section,
         .section .product__section {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: auto;
           gap: 1rem; } }
-      @media only screen and (max-device-width: 479px) {
+      @media (max-device-width: 479px) {
         .main .product__section,
         .section .product__section {
           display: flex;
           flex-direction: column;
           align-content: center;
           gap: 1.5rem; } }
-    @media only screen and (max-device-width: 770px) {
+    @media (max-device-width: 770px) {
       .main .product,
       .section .product {
         flex-direction: column;
@@ -156,8 +156,6 @@ br {
     color: #242423; }
   .main .card,
   .section .card {
-    height: 22.875rem;
-    width: 14rem;
     border: 0px;
     transition: ease-in-out 100ms; }
     .main .card:hover,
@@ -180,7 +178,7 @@ br {
   .section .container__btn .btn:hover {
     transition: ease-in-out 200ms;
     opacity: 0.7; }
-  @media only screen and (max-device-width: 1023px) {
+  @media (max-device-width: 1023px) {
     .main .container__btn,
     .section .container__btn {
       flex-direction: column; } }
@@ -191,7 +189,7 @@ br {
 .header .logo {
   width: 5rem;
   height: 5rem; }
-  @media only screen and (max-device-width: 479px) {
+  @media (max-device-width: 479px) {
     .header .logo {
       width: 3.5rem;
       height: 3.5rem; } }
@@ -251,7 +249,7 @@ br {
     height: 5rem; }
   .footer .svg {
     filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%); }
-  @media only screen and (max-device-width: 479px) {
+  @media (max-device-width: 479px) {
     .footer {
       display: flex;
       flex-direction: column;
