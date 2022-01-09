@@ -123,8 +123,8 @@ br {
     .main .product__section,
     .section .product__section {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
       gap: 1.5rem; }
       @media (max-device-width: 1023px) {
         .main .product__section,
@@ -157,7 +157,8 @@ br {
   .main .card,
   .section .card {
     border: 0px;
-    transition: ease-in-out 100ms; }
+    transition: ease-in-out 100ms;
+    justify-self: center; }
     .main .card:hover,
     .section .card:hover {
       transition: ease-in-out 100ms;

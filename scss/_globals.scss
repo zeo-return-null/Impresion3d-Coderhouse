@@ -155,8 +155,8 @@ br {
 
         &__section {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
             gap: 1.5rem;
 
             @include breakpoint-down(medium) {
@@ -195,6 +195,7 @@ br {
     .card {
         border: 0px;
         transition: ease-in-out 100ms;
+        justify-self: center;
 
         &:hover {
             transition: ease-in-out 100ms;
