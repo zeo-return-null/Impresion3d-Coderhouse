@@ -183,6 +183,10 @@ br {
     .main .container__btn,
     .section .container__btn {
       flex-direction: column; } }
+  .main .comment,
+  .section .comment {
+    height: 250px;
+    resize: none; }
 
 .header .bg-dark {
   background-color: #333533 !important; }
