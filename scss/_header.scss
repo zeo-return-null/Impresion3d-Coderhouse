@@ -45,9 +45,9 @@
         width: 2rem;
         height: 1rem;
 
-        @include breakpoint-down(small) {
-            width: 0.8rem;
-            height: 0.8rem;
+        @include breakpoint-down(medium) {
+            width: 2.4rem;
+            height: 1.2rem;
         }
     }
 

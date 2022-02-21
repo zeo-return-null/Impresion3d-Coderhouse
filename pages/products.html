@@ -48,8 +48,7 @@
               <a class="nav-link btn-primary active" aria-current="page" href="../pages/products.html">Productos</a>
             </li>
             <li class="nav-item">
-              <button type="button" class="nav-link btn-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              <button type="button" class="nav-link btn-primary container-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img class="cart" src="../assets/images/cart.svg" alt="logo">
               </button>
             </li>
@@ -68,140 +67,49 @@
 
     <!-- Products display -->
     <section class="">
-      
 
-      <div id="displayProducts" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 align-content-center justify-content-center">
+
+      <div id="displayProducts"
+        class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 align-content-center justify-content-center">
 
       </div>
 
       <!-- Modal -->
       <div class="container">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Item</th>
-                                    <th scope="col">Cantidad</th>
-                                    <th scope="col">Acción</th>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">Total con Iva</th>
-                                </tr>
-                            </thead>
-                            <tbody id="items"></tbody>
-                            <tfoot>
-                                <tr id="footer">
-                                    <th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" id="clearCart" class="btn btn-danger">Vaciar carrito</button>
-                        <button type="button" class="btn btn-dark">Continuar con su compra</button>
-                    </div>
-                </div>
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Item</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Acción</th>
+                      <th scope="col">Total</th>
+                      <th scope="col">Total con Iva</th>
+                    </tr>
+                  </thead>
+                  <tbody id="items"></tbody>
+                  <tfoot>
+                    <tr id="footer">
+                      <th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="clearCart" class="btn btn-danger">Vaciar carrito</button>
+                <button type="button" class="btn btn-dark">Continuar con su compra</button>
+              </div>
             </div>
+          </div>
         </div>
-
-    </div>
-
-      <!-- Card components -->
-      <!-- <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto Octocat"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/3d-octocat.png" class="card-img-top" alt="impresion de octocat, mascota de github">
-          <div class="card-body bg-container">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">Octocat</h4>
-            <p class="card-text text-center">Impresion de la mascota de github. <br></p>
-          </div>
-        </a>
       </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto craneo humano decorativo"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/3d-skull.png" class="card-img-top" alt="craneo humano impreso en 3d">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">Craneo Humano</h4>
-            <p class="card-text text-center">Impresion decorativa de un craneo humano. <br></p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto escultura de el pensador"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/3d-thinker.png" class="card-img-top"
-            alt="escultura el pensador con baja resolucion de poligonos impreso en 3d">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">El pensador</h4>
-            <p class="card-text text-center">Impresion de la famosa escultura en baja resolución.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto baby Yoda"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/3d-baby-yoda.png" class="card-img-top" alt="impresion de baby yoda">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">Baby Yoda</h4>
-            <p class="card-text text-center">Impresion de baby Yoda de The Mandalorian. <br></p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto Groot"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/groot.png" class="card-img-top"
-            alt="impresion de groot de guardianes de la galaxia">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">Groot</h4>
-            <p class="card-text text-center">Groot de los guardianes de la galaxia. <br></p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre los productos llaveros de animales"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/animals-keyrings.png" class="card-img-top" alt="llaveros de animales">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">LLaveros</h4>
-            <p class="card-text text-center">Llaveros de animales que tambien funcionan como apoya celular.</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto soporte para celular modelo 1"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/phone-stand.png" class="card-img-top" alt="Soporte para el celular">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">Soporte celular</h4>
-            <p class="card-text text-center">Modelo 1 de soporte para el celular. <br></p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card rounded-3 align-self-center" style="width: 14rem;">
-        <a href="./contact.html?comments=Me gustaría saber mas sobre el producto soporte para celular modelo 2"
-          class="text-decoration-none text-color">
-          <img src="../assets/images/phone-stand-2.png" class="card-img-top" alt="otro soporte para celular">
-          <div class="card-body bg-container ">
-            <h4 class="card-text text-center border-bottom border-1 border-secondary">Soporte celular</h4>
-            <p class="card-text text-center">Modelo 2 de soporte para el celular. <br></p>
-          </div>
-        </a>
-      </div>  -->
     </section>
   </main>
 
@@ -230,48 +138,48 @@
 
   <template id="card">
     <div class="col d-flex justify-content-center text-center py-2">
-        <div class="card">
-            <img src="" class="card-img-top " alt="">
-            <div class="card-body d-flex flex-column justify-content-between">
-                <h5 id="name" class="text-center product__title">Producto</h5>
-                <p id="description" class="small">descripción</p>
-                <p id="dimensions" class="text=muted small ">dimensiones</p>
-                <p class="text-center">$<span id="price">precio</span></p>
-                <button class="justify-self-center align-self-center btn btn-primary">Comprar</button>
-            </div>
+      <div class="card">
+        <img src="" class="card-img-top " alt="">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 id="name" class="text-center product__title">Producto</h5>
+          <p id="description" class="small">descripción</p>
+          <p id="dimensions" class="text=muted small ">dimensiones</p>
+          <p class="text-center">$<span id="price">precio</span></p>
+          <button class="justify-self-center align-self-center btn btn-primary">Comprar</button>
         </div>
+      </div>
     </div>
   </template>
 
   <template id="cartFooter">
-      <th scope="row" colspan="2">Total productos</th>
-      <td id="totalQuantity">1</td>
-      <td></td>
-      <td class="font-weight-bold">$ <span id="totalPrice">precio</span></td>
-      <td class="font-weight-bold">$ <span id="totalPriceIva">precio</span></td>
-      <td></td>
+    <th scope="row" colspan="2">Total productos</th>
+    <td id="totalQuantity">1</td>
+    <td></td>
+    <td class="font-weight-bold">$ <span id="totalPrice">precio</span></td>
+    <td class="font-weight-bold">$ <span id="totalPriceIva">precio</span></td>
+    <td></td>
   </template>
 
   <template id="cartTemplate">
-      <tr>
-          <th id="id" scope="row">id</th>
-          <td id="name">nombre</td>
-          <td id="quantity">cantidad</td>
-          <td>
-              <button class="btn btn-danger btn-sm decrease">
-                  -
-              </button>
-              <button class="btn btn-primary btn-sm increase">
-                  +
-              </button>
-          </td>
-          <td>$ <span id="price">precio</span></td>
-          <td>$ <span id="priceIva">precio</span></td>
-          <td>
-              <button class="btn btn-danger btn-sm clearItem">
-                  X
-              </button>
-      </tr>
+    <tr>
+      <th id="id" scope="row">id</th>
+      <td id="name">nombre</td>
+      <td id="quantity">cantidad</td>
+      <td>
+        <button class="btn btn-danger btn-sm decrease">
+          -
+        </button>
+        <button class="btn btn-primary btn-sm increase">
+          +
+        </button>
+      </td>
+      <td>$ <span id="price">precio</span></td>
+      <td>$ <span id="priceIva">precio</span></td>
+      <td>
+        <button class="btn btn-danger btn-sm clearItem">
+          X
+        </button>
+    </tr>
   </template>
 
 

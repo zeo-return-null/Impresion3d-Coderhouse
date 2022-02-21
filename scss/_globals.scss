@@ -203,13 +203,13 @@ br {
         border: 2px solid map-get($colors, border-color);
         height: 40rem;
         width: 22rem;
-        border-radius: 1.2rem;
         justify-self: center;
-
+        border-radius: 1rem;
+        filter: drop-shadow(1px 1px 2px map-get($colors, shadow-color));
 
         
         &-img-top {
-            height: auto;
+            object-fit: cover;
         }
 
         &-body {
@@ -241,18 +241,6 @@ br {
         }
     }
 
-
-    // .card {
-    //     border: 0px;
-    //     transition: ease-in-out 100ms;
-    //     justify-self: center;
-
-    //     &:hover {
-    //         transition: ease-in-out 100ms;
-    //         transform: scale(1.05);
-    //         filter: drop-shadow(1px 1px 3px map-get($colors, shadow-color));
-    //     }
-    // }
 
     // Form buttons 
 
