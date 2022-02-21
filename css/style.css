@@ -186,6 +186,10 @@ br {
         .section .card-body .btn-primary:hover {
           opacity: 0.7;
           transition: ease-in-out 200ms; }
+    .main .card p,
+    .section .card p {
+      padding-bottom: 0.1rem !important;
+      margin-bottom: 0rem !important; }
   .main .container__btn .btn,
   .section .container__btn .btn {
     margin: 0 0.5rem 1rem 0.5rem;
