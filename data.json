@@ -1,0 +1,112 @@
+[
+    {
+        "id":1,
+        "name": "Llaveros de animales",
+        "price": 250,
+        "stock": 10,
+        "dimensions": "2.5cm x 3cm x 4cm",
+        "thumbnailURL": "../assets/images/1.png",
+        "description": "Unos llaveros muy bonitos que tambien sirven para apoyar el celular"
+    },
+    
+    {
+        "id":2,
+        "name": "Soporte para celular modelo 1",
+        "price": 650,
+        "stock": 5,
+        "dimensions": "6.5cm x 8.5cm x 12.5cm",
+        "thumbnailURL": "../assets/images/2.png",
+        "description": "Soporte para el celular, posee ranuras para cargarlo mientras esta apoyado o conectarle los auriculares"
+    },
+
+    {
+        "id":3,
+        "name": "Baby Yoda",
+        "price": 1000,
+        "stock": 3,
+        "dimensions": "8cm x 8cm x 15cm",
+        "thumbnailURL": "../assets/images/3.png",
+        "description": "Figura del personaje Grogu de The Mandalorian, mejor conocido como Baby Yoda en internet"
+    },
+
+    {
+        "id":4,
+        "name": "Lamparas de dinos",
+        "price": 2500,
+        "stock": 15,
+        "dimensions": "15cm x 10cm x 6cm",
+        "thumbnailURL": "../assets/images/4.png",
+        "description": "Lamparas simpaticas con aspecto de dinosaurio, poseen led multicolor con un control remoto para su configuracion"
+    },
+
+    {
+        "id":5,
+        "name": "Funda para micro SD",
+        "price": 200,
+        "stock": 30,
+        "dimensions": "6cm x 4cm x 0.7cm",
+        "thumbnailURL": "../assets/images/5.png",
+        "description": "Funda para guardar tarjetas micro SD, permite almacenar 12 tarjetas "
+    },
+
+    {
+        "id":6,
+        "name": "Gatito malvado",
+        "price": 1500,
+        "stock": 5,
+        "dimensions": "10cm x 5cm x 6cm",
+        "thumbnailURL": "../assets/images/6.png",
+        "description": "Figura de un malvado gatito posado sobre un craneo, sigue siendo adorable"
+    },
+
+    {
+        "id":7,
+        "name": "Craneo humano impreso en 3d",
+        "price": 900,
+        "stock": 10,
+        "dimensions": "10cm x 12cm x 8cm",
+        "thumbnailURL": "../assets/images/7.png",
+        "description": "Impresión decorativa de un craneo humano"
+    },
+
+    {
+        "id":8,
+        "name": "El pensador",
+        "price": 1000,
+        "stock": 2,
+        "dimensions": "6cm x 8cm x 10cm",
+        "thumbnailURL": "../assets/images/8.png",
+        "description": "Impresion de la famosa escultura del pensador con una baja resolucion poligonal"
+    },
+
+    {
+        "id":9,
+        "name": "Soporte para celular modelo 2",
+        "price": 550,
+        "stock": 15,
+        "dimensions": "7cm x 6,5cm x 9,5cm",
+        "thumbnailURL": "../assets/images/9.png",
+        "description": "Soporte para el celular, posee ranura para cargarlo mientras esta apoyado en forma vertical"
+    },
+
+    {
+        "id":10,
+        "name": "Groot",
+        "price": 1200,
+        "stock": 5,
+        "dimensions": "5cm x 6cm x 8cm",
+        "thumbnailURL": "../assets/images/10.png",
+        "description": "Figura del personaje Groot en su forma de niño de Guardianes de la Galaxia"
+    },
+
+    {
+        "id":11,
+        "name": "Octocat",
+        "price": 750,
+        "stock": 1,
+        "dimensions": "5cm x 5cm x 7cm",
+        "thumbnailURL": "../assets/images/11.png",
+        "description": "Figura de la mascota de Github"
+    }
+
+]

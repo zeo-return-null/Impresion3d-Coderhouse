@@ -153,6 +153,12 @@ br {
     .product {
         background-color: map-get($colors, bg-color-secondary);
 
+        &__title {
+            @extend .title;
+            font-size: 1.25rem;
+        }
+
+
         &__section {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -192,17 +198,56 @@ br {
         color: map-get($colors, text-color);
     }
 
+
     .card {
-        border: 0px;
-        transition: ease-in-out 100ms;
+        border: 2px solid map-get($colors, border-color);
+        height: 40rem;
+        width: 22rem;
+        border-radius: 1.2rem;
         justify-self: center;
 
-        &:hover {
-            transition: ease-in-out 100ms;
-            transform: scale(1.05);
-            filter: drop-shadow(1px 1px 3px map-get($colors, shadow-color));
+        
+        &-img-top {
+            height: auto;
         }
+
+        &-body {
+            background-color: map-get($colors, bg-color-secondary) !important;
+
+
+            .btn-primary {
+                background-color: map-get($colors, accent-color) !important;
+                color: map-get($colors, text-color) !important;
+                border-radius: 1rem;
+                text-align: center;
+                opacity: 1;
+                transition: ease-in-out 200ms;
+                border: 1px solid map-get($colors, accent-color);
+                border-color: map-get($colors, border-color);
+
+
+                &:hover {
+                    opacity: 0.7;
+                    transition: ease-in-out 200ms;
+                }
+            }
+
+        }
+    
     }
+
+
+    // .card {
+    //     border: 0px;
+    //     transition: ease-in-out 100ms;
+    //     justify-self: center;
+
+    //     &:hover {
+    //         transition: ease-in-out 100ms;
+    //         transform: scale(1.05);
+    //         filter: drop-shadow(1px 1px 3px map-get($colors, shadow-color));
+    //     }
+    // }
 
     // Form buttons 
 
@@ -213,7 +258,7 @@ br {
             padding: 0.5rem 1rem 0.5rem 1rem;
             text-align: center;
             border-radius: 1rem;
-            color: map-get($colors, text-color);
+            color: map-get($colors, text-color) !important;
             background-color: map-get($colors, accent-color);
             border: 1px solid map-get($colors, border-color);
             transition: ease-in-out 200ms;

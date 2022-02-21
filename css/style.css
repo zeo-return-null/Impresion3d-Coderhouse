@@ -19,9 +19,10 @@ br {
 .main,
 .section {
   background-color: #e8eddf; }
-  .main .title, .main .subtitle,
+  .main .title, .main .subtitle, .main .product__title,
   .section .title,
-  .section .subtitle {
+  .section .subtitle,
+  .section .product__title {
     padding: 0.25rem;
     font-size: 3rem;
     font-family: "Bungee", cursive;
@@ -29,9 +30,10 @@ br {
     text-align: center;
     color: #333533; }
     @media (max-device-width: 479px) {
-      .main .title, .main .subtitle,
+      .main .title, .main .subtitle, .main .product__title,
       .section .title,
-      .section .subtitle {
+      .section .subtitle,
+      .section .product__title {
         font-size: 2rem; } }
   .main .subtitle,
   .section .subtitle {
@@ -120,6 +122,9 @@ br {
   .main .product,
   .section .product {
     background-color: #cfdbd5; }
+    .main .product__title,
+    .section .product__title {
+      font-size: 1.25rem; }
     .main .product__section,
     .section .product__section {
       display: grid;
@@ -156,21 +161,38 @@ br {
     color: #242423; }
   .main .card,
   .section .card {
-    border: 0px;
-    transition: ease-in-out 100ms;
+    border: 2px solid #333533;
+    height: 40rem;
+    width: 22rem;
+    border-radius: 1.2rem;
     justify-self: center; }
-    .main .card:hover,
-    .section .card:hover {
-      transition: ease-in-out 100ms;
-      transform: scale(1.05);
-      filter: drop-shadow(1px 1px 3px #242423); }
+    .main .card-img-top,
+    .section .card-img-top {
+      height: auto; }
+    .main .card-body,
+    .section .card-body {
+      background-color: #cfdbd5 !important; }
+      .main .card-body .btn-primary,
+      .section .card-body .btn-primary {
+        background-color: #f5cb5c !important;
+        color: #242423 !important;
+        border-radius: 1rem;
+        text-align: center;
+        opacity: 1;
+        transition: ease-in-out 200ms;
+        border: 1px solid #f5cb5c;
+        border-color: #333533; }
+        .main .card-body .btn-primary:hover,
+        .section .card-body .btn-primary:hover {
+          opacity: 0.7;
+          transition: ease-in-out 200ms; }
   .main .container__btn .btn,
   .section .container__btn .btn {
     margin: 0 0.5rem 1rem 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
     border-radius: 1rem;
-    color: #242423;
+    color: #242423 !important;
     background-color: #f5cb5c;
     border: 1px solid #333533;
     transition: ease-in-out 200ms;
@@ -192,12 +214,12 @@ br {
   background-color: #333533 !important; }
 
 .header .logo {
-  width: 5rem;
-  height: 5rem; }
+  width: 3rem;
+  height: 3rem; }
   @media (max-device-width: 479px) {
     .header .logo {
-      width: 3.5rem;
-      height: 3.5rem; } }
+      width: 2.5rem;
+      height: 2.5rem; } }
 
 .header .svg {
   filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%); }
@@ -211,10 +233,22 @@ br {
   border-radius: 1rem;
   text-align: center;
   opacity: 1;
-  transition: ease-in-out 200ms; }
+  transition: ease-in-out 200ms;
+  border-color: transparent !important; }
   .header .btn-primary:hover {
     opacity: 0.7;
     transition: ease-in-out 200ms; }
+
+.header button {
+  border: 0px; }
+
+.header .cart {
+  width: 2rem;
+  height: 1rem; }
+  @media (max-device-width: 479px) {
+    .header .cart {
+      width: 0.8rem;
+      height: 0.8rem; } }
 
 .header .active {
   background-color: #242423 !important;
@@ -250,8 +284,8 @@ br {
       transition: ease-in-out 200ms;
       opacity: 0.7; }
   .footer .logo {
-    width: 5rem;
-    height: 5rem; }
+    width: 4rem;
+    height: 4rem; }
   .footer .svg {
     filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%); }
   @media (max-device-width: 479px) {
