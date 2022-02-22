@@ -215,7 +215,7 @@ br {
             background-color: map-get($colors, bg-color-secondary) !important;
 
 
-            .btn-primary {
+            .btn-dark {
                 background-color: map-get($colors, accent-color) !important;
                 color: map-get($colors, text-color) !important;
                 border-radius: 1rem;

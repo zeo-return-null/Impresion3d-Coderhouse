@@ -173,8 +173,8 @@ br {
     .main .card-body,
     .section .card-body {
       background-color: #cfdbd5 !important; }
-      .main .card-body .btn-primary,
-      .section .card-body .btn-primary {
+      .main .card-body .btn-dark,
+      .section .card-body .btn-dark {
         background-color: #f5cb5c !important;
         color: #242423 !important;
         border-radius: 1rem;
@@ -183,8 +183,8 @@ br {
         transition: ease-in-out 200ms;
         border: 1px solid #f5cb5c;
         border-color: #333533; }
-        .main .card-body .btn-primary:hover,
-        .section .card-body .btn-primary:hover {
+        .main .card-body .btn-dark:hover,
+        .section .card-body .btn-dark:hover {
           opacity: 0.7;
           transition: ease-in-out 200ms; }
     .main .card p,
@@ -308,3 +308,30 @@ br {
           margin: 1rem; }
         .footer .social__icons {
           height: 3rem; } }
+
+.modal-content {
+  background-color: #e8eddf; }
+  .modal-content .table {
+    border-color: #e8eddf; }
+  .modal-content .decrease {
+    background-color: #333533;
+    border-color: #333533;
+    color: lightgray; }
+  .modal-content .increase {
+    background-color: #f5cb5c;
+    border-color: #f5cb5c;
+    color: black; }
+  .modal-content .clearItem {
+    background-color: #333533;
+    border-color: #333533;
+    color: lightgray; }
+  .modal-content .modal-footer {
+    border-color: #e8eddf; }
+    .modal-content .modal-footer .clear {
+      background-color: #333533;
+      border-color: #333533;
+      color: lightgray; }
+    .modal-content .modal-footer .continue {
+      background-color: #f5cb5c;
+      border-color: #f5cb5c;
+      color: black; }

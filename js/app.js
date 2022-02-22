@@ -1,7 +1,7 @@
 const fragment = document.createDocumentFragment()
 const displayProducts = document.getElementById("displayProducts")
 const items = document.getElementById("items")
-const modalFooter = document.getElementById("modalFooter")
+const tableFooter = document.getElementById("tableFooter")
 const cartBadge = document.getElementById("cartBadge")
 const cardTemplate = document.getElementById("card").content
 const cartTemplate = document.getElementById("cartTemplate").content
@@ -115,10 +115,10 @@ const displayCart = () => {
 // Se muestra el footer del carrito 
 
 const displayCartFooter = () => {
-    modalFooter.innerHTML = ''
+    tableFooter.innerHTML = ''
 
     if (Object.keys(cart).length === 0) {
-        modalFooter.innerHTML = `
+        tableFooter.innerHTML = `
         <th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
         `
         return
@@ -139,7 +139,7 @@ const displayCartFooter = () => {
     cartFooter.querySelector("#totalPriceIva").textContent = totalPriceIva
     const clone = cartFooter.cloneNode(true)
     fragment.appendChild(clone)
-    modalFooter.appendChild(fragment)
+    tableFooter.appendChild(fragment)
 
     cartBadgeCounter()
 

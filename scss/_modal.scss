@@ -1,0 +1,42 @@
+.modal-content {
+    background-color: map-get($colors, bg-color-primary);
+    
+    .table{ 
+        border-color: map-get($colors, bg-color-primary);
+
+    }
+
+    .decrease {
+        background-color: map-get($colors, bg-dark-color);
+        border-color: map-get($colors, bg-dark-color);
+        color: lightgray;
+    }
+
+    .increase {
+        background-color: map-get($colors, accent-color);
+        border-color: map-get($colors, accent-color);
+        color: black;
+    }
+    
+    .clearItem {
+        background-color: map-get($colors, bg-dark-color);
+        border-color: map-get($colors, bg-dark-color);
+        color: lightgray;
+    }
+
+    .modal-footer {
+        border-color: map-get($colors, bg-color-primary);
+
+        .clear {
+            background-color: map-get($colors, bg-dark-color);
+            border-color: map-get($colors, bg-dark-color);
+            color: lightgray;
+        }
+
+        .continue {
+            background-color: map-get($colors, accent-color);
+            border-color: map-get($colors, accent-color);
+            color: black;
+        }
+    }
+}
