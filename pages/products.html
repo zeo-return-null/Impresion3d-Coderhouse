@@ -47,9 +47,13 @@
             <li class="nav-item ">
               <a class="nav-link btn-primary active" aria-current="page" href="../pages/products.html">Productos</a>
             </li>
-            <li class="nav-item">
-              <button type="button" class="nav-link btn-primary container-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img class="cart" src="../assets/images/cart.svg" alt="logo">
+            <li class="nav-item ">
+              <button type="button" class="nav-link btn-primary container-fluid d-flex flex-row" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img class="cart align-self-center" src="../assets/images/cart.svg" alt="logo">
+                <div id="cartBadge">
+                  <p class="my-0" style="color:#f5cb5c">0</p>
+                </div>
               </button>
             </li>
             <li class="nav-item ">
@@ -96,7 +100,7 @@
                   </thead>
                   <tbody id="items"></tbody>
                   <tfoot>
-                    <tr id="footer">
+                    <tr id="modalFooter">
                       <th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
                     </tr>
                   </tfoot>
@@ -134,7 +138,7 @@
   </footer>
 
 
-
+  <!-- Templates -->
 
   <template id="card">
     <div class="col d-flex justify-content-center text-center py-2">
@@ -182,6 +186,9 @@
     </tr>
   </template>
 
+  <template id="cartBadgeTemplate">
+    <p id="badgeQuantity" class="my-0">0</p>
+  </template>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

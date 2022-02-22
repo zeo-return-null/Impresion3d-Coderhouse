@@ -1,10 +1,13 @@
 const fragment = document.createDocumentFragment()
 const displayProducts = document.getElementById("displayProducts")
 const items = document.getElementById("items")
-const footer = document.getElementById("footer")
+const modalFooter = document.getElementById("modalFooter")
+const cartBadge = document.getElementById("cartBadge")
 const cardTemplate = document.getElementById("card").content
 const cartTemplate = document.getElementById("cartTemplate").content
 const cartFooter = document.getElementById("cartFooter").content
+const cartBadgeTemplate = document.getElementById("cartBadgeTemplate").content
+
 
 let cart = {}
 
@@ -112,10 +115,10 @@ const displayCart = () => {
 // Se muestra el footer del carrito 
 
 const displayCartFooter = () => {
-    footer.innerHTML = ''
+    modalFooter.innerHTML = ''
 
     if (Object.keys(cart).length === 0) {
-        footer.innerHTML = `
+        modalFooter.innerHTML = `
         <th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
         `
         return
@@ -136,7 +139,29 @@ const displayCartFooter = () => {
     cartFooter.querySelector("#totalPriceIva").textContent = totalPriceIva
     const clone = cartFooter.cloneNode(true)
     fragment.appendChild(clone)
-    footer.appendChild(fragment)
+    modalFooter.appendChild(fragment)
+
+    cartBadgeCounter()
+
+}
+
+const cartBadgeCounter = () => {
+    cartBadge.innerHTML = ''
+
+    if (Object.keys(cart).length === 0) {
+        cartBadge.innerHTML = `
+        <p class="my-0" style="color:#f5cb5c">0</p>`
+        return
+    }
+
+    const productsQuantity = Object.values(cart).reduce((acc, {
+        quantity
+    }) => acc + quantity, 0)
+    cartBadgeTemplate.querySelector("#badgeQuantity").textContent = productsQuantity
+
+    const clone = cartBadgeTemplate.cloneNode(true)
+    fragment.append(clone)
+    cartBadge.appendChild(fragment)
 }
 
 // Se añaden las funciones de los botones 
@@ -147,6 +172,7 @@ const btnClearCart = document.getElementById("clearCart")
 btnClearCart.addEventListener("click", () => {
     cart = {}
     displayCart()
+    cartBadgeCounter()
 })
 
 // Botones para incrementar y disminuir la cantidad de los productos
@@ -160,6 +186,7 @@ const btnAction = e => {
             ...product
         }
         displayCart()
+        cartBadgeCounter()
     }
     if (e.target.classList.contains('decrease')) {
         cart[e.target.dataset.id]
@@ -173,6 +200,7 @@ const btnAction = e => {
             }
         }
         displayCart()
+        cartBadgeCounter()
     }
     if (e.target.classList.contains('clearItem')) {
         delete cart[e.target.dataset.id]

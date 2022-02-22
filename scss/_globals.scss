@@ -198,7 +198,6 @@ br {
         color: map-get($colors, text-color);
     }
 
-
     .card {
         border: 2px solid map-get($colors, border-color);
         height: 40rem;
@@ -207,7 +206,7 @@ br {
         border-radius: 1rem;
         filter: drop-shadow(1px 1px 2px map-get($colors, shadow-color));
 
-        
+
         &-img-top {
             object-fit: cover;
         }
@@ -234,7 +233,7 @@ br {
             }
 
         }
-        
+
         p {
             padding-bottom: 0.1rem !important;
             margin-bottom: 0rem !important;
@@ -271,6 +270,6 @@ br {
 
     .comment {
         height: 250px;
-        resize:none;
+        resize: none;
     }
 }
