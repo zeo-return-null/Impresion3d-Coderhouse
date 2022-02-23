@@ -1,6 +1,7 @@
 # Impresion3d-Coderhouse
 
 Trabajo realizado en el curso de Desarrollo Web en Coderhouse.
+Se implementa lo aprendido en el curso de Javascript para el frontend de un ecommerce.
 
 Versión Live: [Impresión 3D](https://zeo-return-null.github.io/Impresion3d-Coderhouse/)
 

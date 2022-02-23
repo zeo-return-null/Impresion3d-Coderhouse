@@ -2,7 +2,7 @@
   "name": "impresion3d",
   "version": "1.0.0",
   "description": "Trabajo realizado en el curso de Desarrollo Web en Coderhouse.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "sass": "node-sass --w scss/ -o css/ --recursive"
   },
