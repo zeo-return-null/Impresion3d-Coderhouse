@@ -11,6 +11,8 @@ const cartBadgeTemplate = document.getElementById("cartBadgeTemplate").content
 
 let cart = {}
 
+AOS.init();
+
 // Se espera la carga completa de la pagina y luego se toman los datos del JSON. Una vez hecho esto se revisa el LocalStorage para ver si hay items en el carrito
 
 document.addEventListener('DOMContentLoaded', () => {

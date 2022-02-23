@@ -3,3 +3,6 @@ node_modules
 
 # Ignore .txt files 
 *.txt
+
+# vscode config
+.vscode
