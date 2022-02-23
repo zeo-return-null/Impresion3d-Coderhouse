@@ -203,6 +203,7 @@ const btnAction = e => {
     if (e.target.classList.contains('clearItem')) {
         delete cart[e.target.dataset.id]
         displayCart()
+        cartBadgeCounter()
     }
     e.stopPropagation()
 }
