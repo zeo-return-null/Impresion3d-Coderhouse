@@ -15,10 +15,9 @@ let cart = {}
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
-    if (localStorage.getItem("cart")) {
-        cart = JSON.parse(localStorage.getItem("cart"))
-        displayCart()
-    }
+    cart = JSON.parse(localStorage.getItem("cart")) || []
+    displayCart()
+
 })
 
 // Se añade event listener a cada tarjeta para añadir los productos al carrito
@@ -91,7 +90,6 @@ const setCart = object => {
 // Se pasan los datos que se visualizaran en el carrito 
 
 const displayCart = () => {
-    // console.log(cart)
     items.innerHTML = ' '
     Object.values(cart).forEach(product => {
         cartTemplate.querySelector("#id").textContent = product.id
