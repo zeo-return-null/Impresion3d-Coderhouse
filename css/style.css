@@ -19,29 +19,12 @@ br {
 .main,
 .section {
   background-color: #e8eddf; }
-  .main .title, .main .subtitle, .main .product__title,
+  .main .title, .main .product__title,
   .section .title,
-  .section .subtitle,
   .section .product__title {
-    padding: 0.25rem;
-    font-size: 3rem;
     font-family: "Bungee", cursive;
-    font-weight: 400;
     text-align: center;
     color: #333533; }
-    @media (max-device-width: 479px) {
-      .main .title, .main .subtitle, .main .product__title,
-      .section .title,
-      .section .subtitle,
-      .section .product__title {
-        font-size: 2rem; } }
-  .main .subtitle,
-  .section .subtitle {
-    font-size: 2.5rem; }
-    @media (max-device-width: 479px) {
-      .main .subtitle,
-      .section .subtitle {
-        font-size: 1.75rem; } }
   .main .article--side,
   .section .article--side {
     display: flex;
@@ -53,8 +36,8 @@ br {
     align-self: center;
     text-align: center;
     color: #242423;
-    font-size: 1.2rem;
-    line-height: 1.5; }
+    font-size: 1rem;
+    line-height: 1.3; }
   .main .article__img,
   .section .article__img {
     height: 450px;
@@ -97,13 +80,6 @@ br {
     .main .bg-container__alternative,
     .section .bg-container__alternative {
       background-color: #e8eddf; }
-  .main .integrants__name,
-  .section .integrants__name {
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Bungee", cursive;
-    font-weight: 400;
-    color: #333533; }
   .main .integrants__img,
   .section .integrants__img {
     height: 250px;
