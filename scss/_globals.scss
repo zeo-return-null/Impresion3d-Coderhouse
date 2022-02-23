@@ -28,7 +28,7 @@ br {
     background-color: map-get($colors, bg-color-primary);
 
     .title {
-        padding: 0.25rem;
+        margin: 0.25rem;
         font-size: 3rem;
         font-family: $font-title;
         font-weight: 400;
