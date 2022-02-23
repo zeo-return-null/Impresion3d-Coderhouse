@@ -184,11 +184,14 @@ br {
 
         &-img-top {
             object-fit: cover;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
         }
 
         &-body {
             background-color: map-get($colors, bg-color-secondary) !important;
-
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
 
             .btn-dark {
                 background-color: map-get($colors, accent-color) !important;
