@@ -125,50 +125,6 @@ br {
 
     // Product section styles
 
-    .product {
-        background-color: map-get($colors, bg-color-secondary);
-
-        &__title {
-            @extend .title;
-            font-size: 1.25rem;
-        }
-
-
-        &__section {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: auto;
-            gap: 1.5rem;
-
-            @include breakpoint-down(medium) {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: auto;
-            }
-
-            @include breakpoint-down(small-medium) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto;
-                gap: 1rem;
-            }
-
-            @include breakpoint-down(small) {
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-                gap: 1.5rem;
-
-            }
-        }
-
-        @include breakpoint-down(small-medium) {
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-    }
-
     .text-color {
         color: map-get($colors, text-color);
     }
