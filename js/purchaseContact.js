@@ -149,15 +149,17 @@ const btnAction = e => {
     e.stopPropagation()
 }
 
-
+const clearCart = () => {
+    cart = {}
+    localStorage.setItem("cart", JSON.stringify(cart))
+}
 
 
 // Botones del formulario
 
 const btnCancelPurchase = document.getElementById('cancelPurchase')
 btnCancelPurchase.addEventListener("click", () => {
-    cart = {}
-    localStorage.setItem("cart", JSON.stringify(cart))
+    clearCart()
     window.location.href = "../pages/products.html"
 })
 
@@ -177,6 +179,12 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'Enviar'
       alert('Enviado!')
+
+      setTimeout(() => {
+        clearCart()
+        window.location.href = "../index.html";
+    }, 100);
+
     }, (err) => {
       btn.value = 'Enviar'
       alert(JSON.stringify(err))
