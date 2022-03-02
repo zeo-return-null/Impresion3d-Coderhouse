@@ -1,0 +1,48 @@
+
+    .table{ 
+        border-color: map-get($colors, bg-color-primary);
+    
+    }
+    
+    .decrease {
+        background-color: map-get($colors, bg-dark-color);
+        border-color: map-get($colors, bg-dark-color);
+        color: lightgray;
+        transition: ease-in-out 200ms;
+
+        &:hover{
+            transition: ease-in-out 200ms;
+        }
+    }
+    
+    .increase {
+        background-color: map-get($colors, accent-color);
+        border-color: map-get($colors, accent-color);
+        color: black;
+        opacity: 1;
+        transition: ease-in-out 200ms;
+
+        &:hover{ 
+            opacity: 0.7;
+            background-color: map-get($colors, accent-color);
+            border-color: map-get($colors, accent-color);
+            transition: ease-in-out 200ms;
+        }
+        &:focus{ 
+            opacity: 0.7;
+            background-color: map-get($colors, accent-color);
+            border-color: map-get($colors, accent-color);
+            transition: ease-in-out 200ms;
+        }
+    }
+    
+    .clearItem {
+        background-color: map-get($colors, bg-dark-color);
+        border-color: map-get($colors, bg-dark-color);
+        color: lightgray;
+    }
+
+    input {
+        background-color: map-get($colors, bg-color-primary);
+        border: hidden;
+    }

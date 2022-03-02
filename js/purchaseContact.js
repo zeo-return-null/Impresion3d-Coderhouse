@@ -1,73 +1,21 @@
 const fragment = document.createDocumentFragment()
-const displayProducts = document.getElementById("displayProducts")
+const cartTemplate = document.getElementById("cartTemplate").content
+const cartFooter = document.getElementById("cartFooter").content
 const items = document.getElementById("items")
 const tableFooter = document.getElementById("tableFooter")
 const cartBadge = document.getElementById("cartBadge")
-const cardTemplate = document.getElementById("card").content
-const cartTemplate = document.getElementById("cartTemplate").content
-const cartFooter = document.getElementById("cartFooter").content
 const cartBadgeTemplate = document.getElementById("cartBadgeTemplate").content
 
-
 let cart = {}
+
 
 
 // Se espera la carga completa de la pagina y luego se toman los datos del JSON. Una vez hecho esto se revisa el LocalStorage para ver si hay items en el carrito
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchData()
     cart = JSON.parse(localStorage.getItem("cart")) || []
     displayCart()
-
 })
-
-// Se añade event listener a cada tarjeta para añadir los productos al carrito
-
-displayProducts.addEventListener("click", e => {
-    addProduct(e)
-})
-
-// se añade event listener a los botones para aumentar o disminuir productos en el carrito
-
-items.addEventListener("click", e => {
-    btnAction(e)
-})
-
-const fetchData = async () => {
-    try {
-        const res = await fetch('../data.json')
-        const data = await res.json()
-
-        displayCards(data)
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-// Mostrar en tarjetas los productos existentes en el data.json 
-
-const displayCards = data => {
-    data.forEach(product => {
-        cardTemplate.querySelector("img").setAttribute("src", product.thumbnailURL)
-        cardTemplate.querySelector("#name").textContent = product.name
-        cardTemplate.querySelector("#description").textContent = product.description
-        cardTemplate.querySelector("#price").textContent = product.price
-        cardTemplate.querySelector("#dimensions").textContent = "Sus dimensiones son " + product.dimensions
-        cardTemplate.querySelector(".btn").dataset.id = product.id
-        const clone = cardTemplate.cloneNode(true)
-        fragment.appendChild(clone)
-    })
-    displayProducts.appendChild(fragment)
-}
-
-//  Funcion para añadir al carrito
-
-const addProduct = e => {
-    if (e.target.classList.contains("btn")) {
-        setCart(e.target.parentElement)
-    }
-    e.stopPropagation()
-}
 
 
 const setCart = object => {
@@ -88,6 +36,10 @@ const setCart = object => {
 
 }
 
+
+items.addEventListener("click", e => {
+    btnAction(e)
+})
 // Se pasan los datos que se visualizaran en el carrito 
 
 const displayCart = () => {
@@ -111,14 +63,12 @@ const displayCart = () => {
     localStorage.setItem("cart", JSON.stringify(cart))
 }
 
-// Se muestra el footer del carrito 
-
 const displayCartFooter = () => {
     tableFooter.innerHTML = ''
 
     if (Object.keys(cart).length === 0) {
         tableFooter.innerHTML = `
-        <th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
+        <th scope="row" colspan="6" class="text-center">Su carrito se encuentra vacio</th>
         `
         return
     }
@@ -135,14 +85,14 @@ const displayCartFooter = () => {
     const totalPriceIva = totalPrice * 1.21
     cartFooter.querySelector("#totalQuantity").textContent = productsQuantity
     cartFooter.querySelector("#totalPrice").textContent = totalPrice
-    cartFooter.querySelector("#totalPriceIva").textContent = totalPriceIva
+    cartFooter.querySelector("#totalPriceIva").value = totalPriceIva
     const clone = cartFooter.cloneNode(true)
     fragment.appendChild(clone)
     tableFooter.appendChild(fragment)
-
+    
     cartBadgeCounter()
-
 }
+
 
 const cartBadgeCounter = () => {
     cartBadge.innerHTML = ''
@@ -163,16 +113,6 @@ const cartBadgeCounter = () => {
     cartBadge.appendChild(fragment)
 }
 
-// Se añaden las funciones de los botones 
-
-// Boton de vaciar carrito
-
-const btnClearCart = document.getElementById("clearCart")
-btnClearCart.addEventListener("click", () => {
-    cart = {}
-    displayCart()
-    cartBadgeCounter()
-})
 
 // Botones para incrementar y disminuir la cantidad de los productos
 
@@ -209,13 +149,36 @@ const btnAction = e => {
     e.stopPropagation()
 }
 
-const continuePurchase = document.getElementById("continuePurchase") 
-continuePurchase.addEventListener("click", () => {
-    if (Object.keys(cart).length === 0) {
-        alert("No posee productos en su carrito!")
-        return
-    }
-    else {
-        window.location.href = "../pages/purchase.html"
-    }
+
+
+
+// Botones del formulario
+
+const btnCancelPurchase = document.getElementById('cancelPurchase')
+btnCancelPurchase.addEventListener("click", () => {
+    cart = {}
+    localStorage.setItem("cart", JSON.stringify(cart))
+    window.location.href = "../pages/products.html"
+})
+
+
+const btn = document.getElementById('button')
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault()
+
+   btn.value = 'Enviando...'
+
+   const serviceID = 'default_service'
+   const templateID = 'template_9f2t193'
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar'
+      alert('Enviado!')
+    }, (err) => {
+      btn.value = 'Enviar'
+      alert(JSON.stringify(err))
+    })
 })

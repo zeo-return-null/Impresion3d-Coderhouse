@@ -54,5 +54,6 @@
     .active {
         background-color: map-get($colors, bg-dark-alternative-color) !important;
         color: map-get($colors, accent-color) !important;
+        
     }
 }

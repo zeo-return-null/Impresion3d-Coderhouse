@@ -276,3 +276,40 @@ br {
       background-color: #f5cb5c;
       border-color: #f5cb5c;
       color: black; }
+
+.table {
+  border-color: #e8eddf; }
+
+.decrease {
+  background-color: #333533;
+  border-color: #333533;
+  color: lightgray;
+  transition: ease-in-out 200ms; }
+  .decrease:hover {
+    transition: ease-in-out 200ms; }
+
+.increase {
+  background-color: #f5cb5c;
+  border-color: #f5cb5c;
+  color: black;
+  opacity: 1;
+  transition: ease-in-out 200ms; }
+  .increase:hover {
+    opacity: 0.7;
+    background-color: #f5cb5c;
+    border-color: #f5cb5c;
+    transition: ease-in-out 200ms; }
+  .increase:focus {
+    opacity: 0.7;
+    background-color: #f5cb5c;
+    border-color: #f5cb5c;
+    transition: ease-in-out 200ms; }
+
+.clearItem {
+  background-color: #333533;
+  border-color: #333533;
+  color: lightgray; }
+
+input {
+  background-color: #e8eddf;
+  border: hidden; }
