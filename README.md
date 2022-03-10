@@ -3,7 +3,7 @@
 Trabajo realizado en el curso de Desarrollo Web en Coderhouse.
 Se integró el frontend de un ecommerce, realizado como trabajo final del curso de Javascript.
 
-Versión Live: [Impresión 3D](https://zeo-return-null.github.io/Impresion3d-Coderhouse/)
+Versión Live: [Impresión 3D](https://zeo-return-null.github.io/impresion3d-coderhouse/)
 
 ## Tecnologías utilizadas.
 
