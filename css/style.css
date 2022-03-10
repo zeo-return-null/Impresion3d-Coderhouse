@@ -42,7 +42,7 @@ br {
     width: 450px;
     border-radius: 1rem;
     filter: drop-shadow(1px 1px 2px #242423); }
-  @media (max-device-width: 1023px) {
+  @media (max-device-width: 991px) {
     .main .article--side,
     .section .article--side {
       flex-direction: column;
@@ -87,7 +87,7 @@ br {
       .section .integrants__img {
         height: 180px;
         width: 180px; } }
-  @media (max-device-width: 1023px) {
+  @media (max-device-width: 991px) {
     .main .integrants__mobile,
     .section .integrants__mobile {
       flex-direction: column;
@@ -102,18 +102,18 @@ br {
     height: 40rem;
     width: 22rem;
     justify-self: center;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     filter: drop-shadow(1px 1px 2px #242423); }
     .main .card-img-top,
     .section .card-img-top {
-      object-fit: cover;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem; }
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      object-fit: fill; }
     .main .card-body,
     .section .card-body {
       background-color: #cfdbd5 !important;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem; }
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem; }
       .main .card-body .btn-dark,
       .section .card-body .btn-dark {
         background-color: #f5cb5c !important;
@@ -147,7 +147,7 @@ br {
   .section .container__btn .btn:hover {
     transition: ease-in-out 200ms;
     opacity: 0.7; }
-  @media (max-device-width: 1023px) {
+  @media (max-device-width: 991px) {
     .main .container__btn,
     .section .container__btn {
       flex-direction: column; } }
@@ -191,7 +191,7 @@ br {
 .header .cart {
   width: 2rem;
   height: 1rem; }
-  @media (max-device-width: 1023px) {
+  @media (max-device-width: 991px) {
     .header .cart {
       width: 2.4rem;
       height: 1.2rem; } }
@@ -250,6 +250,9 @@ br {
         .footer .social__icons {
           height: 3rem; } }
 
+.modal-dialog {
+  max-width: 991px !important; }
+
 .modal-content {
   background-color: #e8eddf; }
   .modal-content .table {
@@ -276,6 +279,10 @@ br {
       background-color: #f5cb5c;
       border-color: #f5cb5c;
       color: black; }
+    @media (max-device-width: 991px) {
+      .modal-content .modal-footer {
+        display: flex !important;
+        flex-direction: column !important; } }
 
 .table {
   border-color: #e8eddf; }

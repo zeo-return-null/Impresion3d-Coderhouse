@@ -1,3 +1,9 @@
+
+
+.modal-dialog {
+	max-width: 991px !important;
+}
+
 .modal-content {
     background-color: map-get($colors, bg-color-primary);
     
@@ -38,5 +44,11 @@
             border-color: map-get($colors, accent-color);
             color: black;
         }
+
+		@include breakpoint-down(medium) {
+			display: flex !important;
+			flex-direction: column !important;
+		}
     }
+
 }

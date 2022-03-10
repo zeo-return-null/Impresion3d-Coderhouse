@@ -14,11 +14,11 @@ $colors: ( // Background colors
     border-color: $warmGrey);
 
 // Breakpoints
-$breakpoints-up: ("large" : "1024px",
+$breakpoints-up: ("large" : "992px",
     "medium": "480px"
 );
 
 $breakpoints-down: ("small": "479px",
     "small-medium": "770px",
-    "medium": "1023px"
+    "medium": "991px"
 );

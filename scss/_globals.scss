@@ -134,20 +134,19 @@ br {
         height: 40rem;
         width: 22rem;
         justify-self: center;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         filter: drop-shadow(1px 1px 2px map-get($colors, shadow-color));
 
-
         &-img-top {
-            object-fit: cover;
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+			object-fit: fill;
         }
 
         &-body {
             background-color: map-get($colors, bg-color-secondary) !important;
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
 
             .btn-dark {
                 background-color: map-get($colors, accent-color) !important;
