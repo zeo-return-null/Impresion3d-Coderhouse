@@ -1,3 +1,4 @@
+
 const cartBadge = document.getElementById("cartBadge")
 const cartBadgeTemplate = document.getElementById("cartBadgeTemplate").content
 const fragment = document.createDocumentFragment()
@@ -31,5 +32,5 @@ const cartBadgeCounter = () => {
 
 const cartButton = document.getElementById("cartButton") 
 cartButton.addEventListener("click", () => {
-        window.location.href = "./pages/purchase.html"
+        window.location.href = "../pages/purchase.html"
 })
