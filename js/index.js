@@ -37,6 +37,6 @@ cartButton.addEventListener("click", () => {
         return
     }
     else {
-        window.location.href = "../pages/purchase.html"
+        window.location.href = "/pages/purchase.html"
     }
 })
