@@ -68,24 +68,26 @@
 		<div class="container__form d-flex px-5 py-2">
 			<form class="container-sm my-3 justify-content-center align-content-center" id="form"
 				action="https://formspree.io/f/meqnodae" method="post">
-				<table class="table">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Item</th>
-							<th scope="col">Cantidad</th>
-							<th scope="col">Acción</th>
-							<th scope="col">Total</th>
-							<th scope="col">Total con Iva</th>
-						</tr>
-					</thead>
-					<tbody id="items"></tbody>
-					<tfoot>
-						<tr id="tableFooter">
-							<th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
-						</tr>
-					</tfoot>
-				</table>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Item</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">Acción</th>
+								<th scope="col">Total</th>
+								<th scope="col">Total con Iva</th>
+							</tr>
+						</thead>
+						<tbody id="items"></tbody>
+						<tfoot>
+							<tr id="tableFooter">
+								<th scope="row" colspan="7" class="text-center">Su carrito se encuentra vacio</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
 				<p class="article__p bg-container container py-3">Recuerde que el color del producto puede variar segun
 					disponibilidad. Por favor indique que material desea para su producto, en caso contrario seran
 					realizados en PLA.</p>
