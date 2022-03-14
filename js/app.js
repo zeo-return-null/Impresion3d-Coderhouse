@@ -113,6 +113,7 @@ const displayCart = () => {
 
 // Se muestra el footer del carrito 
 
+
 const displayCartFooter = () => {
     tableFooter.innerHTML = ''
 

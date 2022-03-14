@@ -1,59 +1,60 @@
 .header {
 
-    .bg-dark {
-        background-color: map-get($colors, bg-dark-color) !important;
-    }
+	.bg-dark {
+		background-color: map-get($colors, bg-dark-color) !important;
+		min-height: 12vh;
+	}
 
-    .logo {
-        width: 3rem;
-        height: 3rem;
+	.logo {
+		width: 3rem;
+		height: 3rem;
 
-        @include breakpoint-down(small) {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-    }
+		@include breakpoint-down(small) {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
 
-    .svg {
-        filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
-    }
+	.svg {
+		filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
+	}
 
-    .navbar-collapse {
-        flex-grow: 0;
-    }
+	.navbar-collapse {
+		flex-grow: 0;
+	}
 
-    .btn-primary {
-        background-color: map-get($colors, accent-color) !important;
-        color: map-get($colors, text-color) !important;
-        border-radius: 1rem;
-        text-align: center;
-        opacity: 1;
-        transition: ease-in-out 200ms;
-        border-color: transparent !important;
+	.btn-primary {
+		background-color: map-get($colors, accent-color) !important;
+		color: map-get($colors, text-color) !important;
+		border-radius: 1rem;
+		text-align: center;
+		opacity: 1;
+		transition: ease-in-out 200ms;
+		border-color: transparent !important;
 
-        &:hover {
-            opacity: 0.7;
-            transition: ease-in-out 200ms;
-        }
-    }
+		&:hover {
+			opacity: 0.7;
+			transition: ease-in-out 200ms;
+		}
+	}
 
-    button {
-        border: 0px;
-    }
+	button {
+		border: 0px;
+	}
 
-    .cart {
-        width: 2rem;
-        height: 1rem;
+	.cart {
+		width: 2rem;
+		height: 1rem;
 
-        @include breakpoint-down(medium) {
-            width: 2.4rem;
-            height: 1.2rem;
-        }
-    }
+		@include breakpoint-down(medium) {
+			width: 2.4rem;
+			height: 1.2rem;
+		}
+	}
 
-    .active {
-        background-color: map-get($colors, bg-dark-alternative-color) !important;
-        color: map-get($colors, accent-color) !important;
-        
-    }
+	.active {
+		background-color: map-get($colors, bg-dark-alternative-color) !important;
+		color: map-get($colors, accent-color) !important;
+
+	}
 }

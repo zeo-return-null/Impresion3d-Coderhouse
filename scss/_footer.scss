@@ -1,77 +1,77 @@
 .footer {
-    background-color: map-get($colors, bg-dark-color) !important;
+	background-color: map-get($colors, bg-dark-color) !important;
 
-    .menu {
-        justify-self: center;
+	.menu {
+		justify-self: center;
 
-        .links {
-            display: flex;
-            margin: 0.25rem;
-            justify-content: center;
+		.links {
+			display: flex;
+			margin: 0.25rem;
+			justify-content: center;
 
-            &__a {
-                margin: 0.25rem;
-                padding: 0.5rem 1.25rem 0.5rem 1.25rem;
-                text-align: center;
-                border-radius: 1rem;
-                color: map-get($colors, text-color);
-                background-color: map-get($colors, accent-color);
-                border: 1px solid map-get($colors, border-color);
-                transition: ease-in-out 200ms;
-                opacity: 1;
+			&__a {
+				margin: 0.25rem;
+				padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+				text-align: center;
+				border-radius: 1rem;
+				color: map-get($colors, text-color);
+				background-color: map-get($colors, accent-color);
+				border: 1px solid map-get($colors, border-color);
+				transition: ease-in-out 200ms;
+				opacity: 1;
 
-                &:hover {
-                    transition: ease-in-out 200ms;
-                    opacity: 0.7;
-                    color: map-get($colors, bg-dark-alternative-color);
-                }
-            }
+				&:hover {
+					transition: ease-in-out 200ms;
+					opacity: 0.7;
+					color: map-get($colors, bg-dark-alternative-color);
+				}
+			}
 
-        }
-    }
+		}
+	}
 
-    .social__icons {
-        height: 4rem;
-        transition: ease-in-out 200ms;
-        opacity: 1;
+	.social__icons {
+		height: 4rem;
+		transition: ease-in-out 200ms;
+		opacity: 1;
 
-        &:hover {
-            transition: ease-in-out 200ms;
-            opacity: 0.7;
-        }
-    }
+		&:hover {
+			transition: ease-in-out 200ms;
+			opacity: 0.7;
+		}
+	}
 
-    .logo {
-        width: 4rem;
-        height: 4rem;
-    }
+	.logo {
+		width: 4rem;
+		height: 4rem;
+	}
 
-    .svg {
-        filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
-    }
+	.svg {
+		filter: invert(87%) sepia(67%) saturate(6608%) hue-rotate(314deg) brightness(106%) contrast(92%);
+	}
 
-    @include breakpoint-down(small) {
+	@include breakpoint-down(small) {
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
-        .logo {
-            display: none
-        }
+		.logo {
+			display: none
+		}
 
-        .social {
-            display: flex;
-            flex-direction: row;
-            align-self: center;
+		.social {
+			display: flex;
+			flex-direction: row;
+			align-self: center;
 
-            a {
-                margin: 1rem;
-            }
+			a {
+				margin: 1rem;
+			}
 
-            &__icons {
-                height: 3rem;
-            }
-        }
-    }
+			&__icons {
+				height: 3rem;
+			}
+		}
+	}
 }
