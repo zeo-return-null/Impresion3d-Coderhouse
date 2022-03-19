@@ -34,15 +34,27 @@
         border-color: map-get($colors, bg-color-primary);
 
         .clear {
-            background-color: map-get($colors, bg-dark-color);
-            border-color: map-get($colors, bg-dark-color);
-            color: lightgray;
+            background-color: map-get($colors, accent-color);
+            border-color: map-get($colors, accent-color);
+            color: black;
+
+			&:hover {
+				transition: ease-in-out 200ms;
+				background-color: #e42d3d;
+			}
         }
+		
+	
 
         .continue {
             background-color: map-get($colors, accent-color);
             border-color: map-get($colors, accent-color);
             color: black;
+			
+			&:hover {
+				transition: ease-in-out 200ms;
+				background-color: rgb(14, 175, 119);
+			}
         }
 
 		@include breakpoint-down(medium) {

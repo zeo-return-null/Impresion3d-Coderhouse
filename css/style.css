@@ -324,13 +324,19 @@ br {
   .modal-content .modal-footer {
     border-color: #e8eddf; }
     .modal-content .modal-footer .clear {
-      background-color: #333533;
-      border-color: #333533;
-      color: lightgray; }
+      background-color: #f5cb5c;
+      border-color: #f5cb5c;
+      color: black; }
+      .modal-content .modal-footer .clear:hover {
+        transition: ease-in-out 200ms;
+        background-color: #e42d3d; }
     .modal-content .modal-footer .continue {
       background-color: #f5cb5c;
       border-color: #f5cb5c;
       color: black; }
+      .modal-content .modal-footer .continue:hover {
+        transition: ease-in-out 200ms;
+        background-color: #0eaf77; }
     @media (max-device-width: 991px) {
       .modal-content .modal-footer {
         display: flex !important;
