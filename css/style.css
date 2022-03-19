@@ -324,6 +324,15 @@ br {
   .modal-content .modal-footer {
     border-color: #e8eddf; }
     .modal-content .modal-footer .clear {
+      margin: 0 0.5rem 1rem 0.5rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      text-align: center;
+      border-radius: 1rem;
+      color: #242423 !important;
+      background-color: #f5cb5c;
+      border: 1px solid #333533;
+      transition: ease-in-out 200ms;
+      opacity: 1;
       background-color: #f5cb5c;
       border-color: #f5cb5c;
       color: black; }
@@ -331,6 +340,15 @@ br {
         transition: ease-in-out 200ms;
         background-color: #e42d3d; }
     .modal-content .modal-footer .continue {
+      margin: 0 0.5rem 1rem 0.5rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      text-align: center;
+      border-radius: 1rem;
+      color: #242423 !important;
+      background-color: #f5cb5c;
+      border: 1px solid #333533;
+      transition: ease-in-out 200ms;
+      opacity: 1;
       background-color: #f5cb5c;
       border-color: #f5cb5c;
       color: black; }
