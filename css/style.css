@@ -176,12 +176,24 @@ br {
     border: 1px solid #333533;
     transition: ease-in-out 200ms;
     opacity: 1; }
+    .main .container__btn .btn-danger:hover, .main__alt .container__btn .btn-danger:hover, .section__alt .container__btn .btn-danger:hover,
+    .section .container__btn .btn-danger:hover,
+    .main__alt .container__btn .btn-danger:hover,
+    .section__alt .container__btn .btn-danger:hover {
+      transition: ease-in-out 200ms;
+      background-color: #e42d3d; }
+    .main .container__btn .btn-success:hover, .main__alt .container__btn .btn-success:hover, .section__alt .container__btn .btn-success:hover,
+    .section .container__btn .btn-success:hover,
+    .main__alt .container__btn .btn-success:hover,
+    .section__alt .container__btn .btn-success:hover {
+      transition: ease-in-out 200ms;
+      background-color: #0eaf77; }
   .main .container__btn .btn:hover, .main__alt .container__btn .btn:hover, .section__alt .container__btn .btn:hover,
   .section .container__btn .btn:hover,
   .main__alt .container__btn .btn:hover,
   .section__alt .container__btn .btn:hover {
     transition: ease-in-out 200ms;
-    opacity: 0.7; }
+    opacity: 0.9; }
   @media (max-device-width: 991px) {
     .main .container__btn, .main__alt .container__btn, .section__alt .container__btn,
     .section .container__btn,

@@ -179,11 +179,23 @@ br {
 			border: 1px solid map-get($colors, border-color);
 			transition: ease-in-out 200ms;
 			opacity: 1;
+
+			&-danger:hover {
+				transition: ease-in-out 200ms;
+				background-color: #e42d3d;
+			}
+
+
+			&-success:hover {
+				transition: ease-in-out 200ms;
+				background-color: rgb(14, 175, 119);
+			}
+
 		}
 
 		.btn:hover {
 			transition: ease-in-out 200ms;
-			opacity: 0.7;
+			opacity: 0.9;
 		}
 
 		@include breakpoint-down(medium) {

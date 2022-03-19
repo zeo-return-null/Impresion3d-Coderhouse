@@ -155,36 +155,60 @@ const clearCart = () => {
 
 // Botones del formulario
 
+
 const btnCancelPurchase = document.getElementById('cancelPurchase')
 btnCancelPurchase.addEventListener("click", () => {
-	clearCart()
-	window.location.href = "../pages/products.html"
+	if (Object.keys(cart).length === 0) {
+		window.location.href = "../pages/products.html"
+	
+	}
+	else{ Swal.fire({
+			template: '#cancel-purchase'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				clearCart()
+				window.location.href = "../pages/products.html"
+			}
+		}) 
+	}
 })
 
 
-const btn = document.getElementById('button')
+const sendBtn = document.getElementById('sendButton')
 
 document.getElementById('form')
 	.addEventListener('submit', function (event) {
 		event.preventDefault()
-
-		btn.value = 'Enviando...'
-
-		const serviceID = 'default_service'
-		const templateID = 'template_9f2t193'
-
-		emailjs.sendForm(serviceID, templateID, this)
-			.then(() => {
-				btn.value = 'Enviar'
-				alert('Enviado!')
-
-				setTimeout(() => {
-					clearCart()
-					window.location.href = "../index.html";
-				}, 100);
-
-			}, (err) => {
-				btn.value = 'Enviar'
-				alert(JSON.stringify(err))
+		if (Object.keys(cart).length === 0) {
+			Swal.fire({
+				template: '#products-warning'
+			}).then((result) => {
+				if(result.isConfirmed) {
+					return
+				}
 			})
+		}
+		else {
+			sendBtn.value = 'Enviando...'
+			const serviceID = 'default_service'
+			const templateID = 'template_9f2t193'
+
+			emailjs.sendForm(serviceID, templateID, this)
+				.then(() => {
+					sendBtn.value = 'Enviar'
+					Swal.fire({
+						template: '#successful-purchase'
+					}).then((result) => {
+						if (result.isConfirmed) {
+							setTimeout(() => {
+								clearCart()
+								window.location.href = "../index.html";
+							}, 100);
+						} 
+					})
+				}, (err) => {
+					sendBtn.value = 'Enviar'
+					alert(JSON.stringify(err))
+				})
+		}
 	})
