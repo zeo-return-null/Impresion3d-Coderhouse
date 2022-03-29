@@ -1,7 +1,7 @@
 
     .table{ 
         border-color: map-get($colors, bg-color-primary);
-    
+		white-space: nowrap;
     }
     
     .decrease {

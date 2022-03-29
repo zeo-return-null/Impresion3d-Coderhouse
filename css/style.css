@@ -361,7 +361,8 @@ br {
         flex-direction: column !important; } }
 
 .table {
-  border-color: #e8eddf; }
+  border-color: #e8eddf;
+  white-space: nowrap; }
 
 .decrease {
   background-color: #333533;
